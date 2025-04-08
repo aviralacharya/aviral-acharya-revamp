@@ -49,18 +49,13 @@ const SocialLinks = () => {
         <div className="flex flex-col items-center space-y-6">
           <a 
             href="mailto:hello@aviralacharya.com" 
-            className="font-mono text-xs tracking-widest social-link vertical-text"
+            className="font-mono text-xs tracking-widest social-link writing-vertical-rl"
           >
             hello@aviralacharya.com
           </a>
           <div className="h-24 w-px bg-slate-dark"></div>
         </div>
       </div>
-      <style jsx>{`
-        .vertical-text {
-          writing-mode: vertical-rl;
-        }
-      `}</style>
     </>
   );
 };

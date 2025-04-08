@@ -1,0 +1,36 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .writing-vertical-rl {
+    writing-mode: vertical-rl;
+  }
+}
+
+@layer components {
+  .social-link {
+    @apply text-slate hover:text-primary transition-colors duration-300;
+  }
+  
+  .nav-link {
+    @apply text-slate-light hover:text-primary relative text-sm font-mono transition-colors duration-300;
+  }
+  
+  .nav-number {
+    @apply text-primary text-sm font-mono mr-1;
+  }
+  
+  .section-heading {
+    @apply text-white font-semibold flex items-center after:content-[''] after:block after:w-48 after:h-px after:bg-slate-dark after:ml-4 md:after:w-80;
+  }
+  
+  .numbered-heading {
+    @apply text-primary mr-2 font-mono text-lg;
+  }
+  
+  .styled-link {
+    @apply text-primary hover:underline;
+  }
+}
